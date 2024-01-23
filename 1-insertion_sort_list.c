@@ -1,6 +1,5 @@
 #include "sort.h"
 
-void swap_nodes(listint_t **head, listint_t *node1, listint_t *node2);
 
 /**
  * swap_nodes - function swaps two nodes in a linked list
@@ -8,6 +7,8 @@ void swap_nodes(listint_t **head, listint_t *node1, listint_t *node2);
  * @node1: The first node
  * @node2: The second node
  */
+
+void swap_nodes(listint_t **head, listint_t *node1, listint_t *node2)
 {
 	listint_t *x;
 	listint_t *y;
