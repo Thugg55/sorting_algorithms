@@ -60,7 +60,7 @@ int partition(int *array, int low, int high, size_t size)
  * @size: The size of array to be divided
  */
 
-void sort(int *array,int low, int high, size_t size)
+void sort(int *array, int low, int high, size_t size)
 {
 	int x;
 
@@ -68,8 +68,8 @@ void sort(int *array,int low, int high, size_t size)
 		return;
 	x = partition(array, low, high, size);
 
-	sort(array, low, x-1, size);
-	sort(array, x+1, high, size);
+	sort(array, low, x - 1, size);
+	sort(array, x + 1, high, size);
 }
 
 
